@@ -4,10 +4,7 @@ module.exports = {
     context: __dirname,
     entry: {
         Home: "./index.jsx",
-        Customers: "./Customer.jsx",
-        Products: "./Product.jsx",
-        Stores: "./Store.jsx",
-        Sales: "./Sales.jsx"
+      
     },
     output: {
         path: __dirname + "/dist",

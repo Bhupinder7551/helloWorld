@@ -16,3 +16,21 @@ textarea {
     max-width: 280px;
 }
 
+
+.avtarstyle {
+    background-color: black;
+    border-radius: 5%;
+}
+
+    .avtarstyle img {
+        height: 200px;
+        width: 300px;
+    }
+
+    .avtarstyle h1 {
+        color: white;
+    }
+
+    .avtarstyle p {
+        color: white;
+    }

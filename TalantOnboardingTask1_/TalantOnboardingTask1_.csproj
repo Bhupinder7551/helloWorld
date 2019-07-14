@@ -123,59 +123,41 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Module.css" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Models\Model1.Context.tt">
+    <Content Include="Models\Model2.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
-      <DependentUpon>Model1.edmx</DependentUpon>
+      <DependentUpon>Model2.edmx</DependentUpon>
+      <LastGenOutput>Model2.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\Model1.tt">
+    <Content Include="Models\Model2.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.cs</LastGenOutput>
+      <DependentUpon>Model2.edmx</DependentUpon>
+      <LastGenOutput>Model2.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <EntityDeploy Include="Models\Model1.edmx">
+    <EntityDeploy Include="Models\Model2.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+      <LastGenOutput>Model2.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\Model1.edmx.diagram">
-      <DependentUpon>Model1.edmx</DependentUpon>
+    <Content Include="Models\Model2.edmx.diagram">
+      <DependentUpon>Model2.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
-    <Content Include="Scripts\react\Customer.jsx" />
-    <Content Include="Scripts\react\Customers\CustomerCreate.jsx" />
-    <Content Include="Scripts\react\Customers\CustomerDelete.jsx" />
-    <Content Include="Scripts\react\Customers\CustomerEdit.jsx" />
-    <Content Include="Scripts\react\Customers\ListOfCustomer.jsx" />
     <Content Include="Scripts\react\dist\bundle.js" />
-    <Content Include="Scripts\react\dist\Customers.bundle.js" />
     <Content Include="Scripts\react\dist\Home.bundle.js" />
-    <Content Include="Scripts\react\dist\Products.bundle.js" />
-    <Content Include="Scripts\react\dist\Sales.bundle.js" />
-    <Content Include="Scripts\react\dist\Stores.bundle.js" />
     <Content Include="Scripts\react\index.jsx" />
-    <Content Include="Scripts\react\Product.jsx" />
-    <Content Include="Scripts\react\Products\ListOfProducts.jsx" />
-    <Content Include="Scripts\react\Products\ProductCreate.jsx" />
-    <Content Include="Scripts\react\Products\ProductDelete.jsx" />
-    <Content Include="Scripts\react\Products\ProductEdit.jsx" />
-    <Content Include="Scripts\react\Sales.jsx" />
-    <Content Include="Scripts\react\Sales\ListOfSales.jsx" />
-    <Content Include="Scripts\react\Sales\SaleCreate.jsx" />
-    <Content Include="Scripts\react\Sales\SaleDelete.jsx" />
-    <Content Include="Scripts\react\Sales\SaleEdit.jsx" />
-    <Content Include="Scripts\react\Store.jsx" />
-    <Content Include="Scripts\react\Stores\ListOfStore.jsx" />
-    <Content Include="Scripts\react\Stores\StoreCreate.jsx" />
-    <Content Include="Scripts\react\Stores\StoreDelete.jsx" />
-    <Content Include="Scripts\react\Stores\StoreEdit.jsx" />
+    <Content Include="Scripts\react\shopping\login.jsx" />
+    <Content Include="Scripts\react\shopping\product.jsx" />
+    <Content Include="Scripts\react\shopping\sales.jsx" />
+    <Content Include="Scripts\react\shopping\shoppingList.jsx" />
+    <Content Include="Scripts\react\shopping\Store.jsx" />
     <Content Include="Scripts\react\webpack.config.js" />
     <Content Include="Web.config" />
     <Content Include="Scripts\react\package-lock.json" />
@@ -184,43 +166,36 @@
   <ItemGroup>
     <Compile Include="App_Start\ReactConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\ProductController.cs" />
-    <Compile Include="Controllers\SaleController.cs" />
-    <Compile Include="Controllers\StoreController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Customer_.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+    <Compile Include="Models\Customer.cs">
+      <DependentUpon>Model2.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Model1.Context.cs">
+    <Compile Include="Models\Model2.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.Context.tt</DependentUpon>
+      <DependentUpon>Model2.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Model1.cs">
+    <Compile Include="Models\Model2.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Model2.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Model1.Designer.cs">
+    <Compile Include="Models\Model2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.edmx</DependentUpon>
+      <DependentUpon>Model2.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Models\Product_.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+    <Compile Include="Models\Product.cs">
+      <DependentUpon>Model2.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Sales_.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+    <Compile Include="Models\Sale.cs">
+      <DependentUpon>Model2.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Store_.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\sysdiagram.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+    <Compile Include="Models\Store.cs">
+      <DependentUpon>Model2.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -233,11 +208,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-    <Content Include="Views\Customer\Index.cshtml" />
-    <Content Include="Views\Home\home.cshtml" />
-    <Content Include="Views\Product\Index.cshtml" />
-    <Content Include="Views\Store\Index.cshtml" />
-    <Content Include="Views\Sale\Index.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -1,5 +1,6 @@
 ﻿import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import Shopping from './shopping/shoppingList.jsx'
 
-const app = document.getElementById('main');
-ReactDOM.render( <h1>hii my name is bhupinder singh</h1> , app);
+const app = document.getElementById('shopping');
+ReactDOM.render(<Shopping />, app);

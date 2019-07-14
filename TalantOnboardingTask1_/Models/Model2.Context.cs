@@ -13,10 +13,10 @@ namespace TalantOnboardingTask1_.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class gmailEntities : DbContext
+    public partial class CRUDEntities : DbContext
     {
-        public gmailEntities()
-            : base("name=gmailEntities")
+        public CRUDEntities()
+            : base("name=CRUDEntities")
         {
         }
     
@@ -25,6 +25,9 @@ namespace TalantOnboardingTask1_.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Gmail> Gmails { get; set; }
+        public virtual DbSet<Customer> Customers { get; set; }
+        public virtual DbSet<Product> Products { get; set; }
+        public virtual DbSet<Sale> Sales { get; set; }
+        public virtual DbSet<Store> Stores { get; set; }
     }
 }
